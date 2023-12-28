@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+header {
+  background: transparent ;
+  backdrop-filter: invert(10%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: #fff;
+  padding: 0.6rem;
+}
+*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  float: left;
+}
+img {
+  border-radius: 30px;
+}
+table {
+  width: 100%;
+}
+
+th {
+  width: 33.3%;
+}
+
+th h1{
+  font-size:  4rem;
+  color: white;
+}
+
+body {
+  min-height: 100vh;
+  background: url('../imagenes/fondo1.gif') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  margin: 150px auto;
+}
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.wrapper .btn:hover {
+  background: rgb(133, 25, 179);
+  border: 2px solid rgba(255, 255, 255, .2);
+  color: white;
+}
+div {
+  font-family:verdana;
+  font-size:4rem;
+  color:white;
+  text-shadow:2px  0px 0px black,
+               0px  2px 0px black,
+              -2px  0px 0px black,
+               0px -2px 0px black;
+}
