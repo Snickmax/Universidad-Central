@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.2.0/math.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="codigo.js"></script>
+    <title>Actividad</title>
+</head>
+<body>
+    <!-- Encabezador -->
+    <header>
+        <h1></h1>
+        <table>
+            <tr>
+                <th class="MENU"><a href="#Introduccion">¿Qué es la Distribución Normal?</a></th>
+                <th class="MENU"><a href="#Calculadora">Calculadora</a></th>
+                <th class="MENU"><a href="#Concepto">Conceptos Claves</th>
+                <th class="MENU"><a href="#Formula">Fórmula</a></th>
+            </tr>
+        </table>
+    </header>
+    <!-- Cuerpo -->
+    <section class="container">
+        <!-- Explicaion de la Distribucion normal -->
+        
+        <article id="Introduccion">
+            <h2>¿Qué es la Distribución Normal?</h2>
+            <p>
+                La distribución normal, también conocida como la distribución de Gauss o campana de Gauss, es una distribución de probabilidad continua que se utiliza comúnmente en estadísticas. Se caracteriza por tener una forma de campana simétrica alrededor de su media. En esta sección, exploraremos los conceptos básicos de la distribución normal y su importancia en la teoría de probabilidad y estadísticas.
+            </p>
+        </article>
+        <!-- Calculadora -->
+        <article id="Calculadora">
+            <h2>Calculadora de distribución normal</h2>
+            <form action="">
+                <table>
+                    <tr>
+                        <th class="media"><label for="mu">Media (μ): </label></th>
+                        <th></th>
+                        <th class="sigma"><label for="sigma">Desviación Estándar (σ): </label></th>
+                    </tr>
+                    <tr>
+                        <td class="media"><input type="number" id="mu" name="mu"><br></td>
+                        <td class="select">
+                            <select name="seleccion" id="seleccion" onchange="select()" >
+                            <option value = "mayor">P(X > a)</option>
+                            <option value = "menor">P(X < a)</option>
+                            <option value = "entre">P(a < X < b)</option>
+                            </select>
+                        </td>
+                        <td class="sigma">
+                            <input type="number" id="sigma" name="sigma" required>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="select">
+                            <!-- Mayor que -->
+                            <p>
+                                <span id="seleccion_mayor" style="display: inline;">
+                                    <label for="nummayor">P</label>
+                                    <span class="paren">
+                                        <label for="nummayor">X ></label>
+                                        <input type="number" id="nummayor">
+                                    </span>
+                                </span>
+                            </p>
+                            <!-- Menor que -->
+                            <p>
+                                <span id="seleccion_menor" style="display: none;">
+                                    <label for="nummenor">P</label>
+                                    <span class="paren">
+                                        <label for="nummenor">X <</label>
+                                        <input type="number" id="nummenor">
+                                    <span>
+                                </span>
+                            </p>
+                            <!-- Entre -->
+                            <p>
+                                <span id="seleccion_entre" style="display: none;">
+                                    <label for="entremayor">P</label>
+                                    <span class="paren">
+                                        <input type="number" class = "numentre2" id = "entremenor">
+                                        <label for="entremenor">< x <</label>
+                                        <input type="number" class = "numentre2" id= "entremayor">
+                                    </span>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="select">
+                            <!-- Resultados -->
+                            <label for="valor">Valor</label> 
+                            <input type="number" id = "valor" readonly>&nbsp; or &nbsp;
+                            <input type="number" id = "valor2" readonly>%
+                            <!-- Botones -->
+                            <button type="button" onclick="calc()">Aceptar</button>
+                            <button type="button" onclick="limp()">Limpiar</button> 
+
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <p>
+                En esta sección, puedes ingresar los parámetros de la distribución normal, como la media y la desviación estándar. Además, podrás seleccionar la probabilidad que deseas calcular, ya sea la probabilidad de que una variable aleatoria sea menor que cierto valor o mayor que cierto valor. 
+            </p>
+        </article>
+        <!-- Explicaion -->
+        <article id = "Concepto">
+            <h2>Conceptos Claves</h2>
+            <p>
+                En esta sección, se abordarán los conceptos clave relacionados con la distribución normal, así como una guía sobre cómo utilizar la calculadora asociada. A continuación, se detallan los elementos esenciales:
+                <ul>
+                    <li>
+                        <b>Media (μ):</b> Representa el valor medio de la distribución. Ingresa este valor para centrar la campana de Gauss en el punto deseado.
+                    </li>
+                    <li>
+                        <b>Desviación Estándar (σ):</b> Indica la medida de dispersión de los datos con respecto a la media. Ingrese la desviación estándar para comprender la amplitud de la distribución.
+                    </li>
+                    <li>
+                        <b>Probabilidad:</b> Selecciona si deseas calcular la probabilidad de que la variable aleatoria sea menor o mayor que cierto valor. Esta elección define el contexto del cálculo.
+                    </li>
+                    <li>
+                        <b>Valor de Probabilidad:</b> Ingresa el valor para el cual deseas calcular la probabilidad. Este valor será el punto de referencia para la evaluación probabilística.
+                    </li>
+                </ul>
+            </p>
+
+        </article>
+        <article id="Formula">
+            <h2>Fórmula de la Distribución Normal</h2>
+            <p>
+                La función de densidad de probabilidad (PDF) de la distribución normal se define por la siguiente fórmula: 
+                <br>
+                <p><img src="form.png" alt=""></p>
+                <ul>
+                    <li>
+                        <b>f(x;μ,σ):</b> Representa la probabilidad de que la variable aleatoria tome el valor σ.
+                    </li>
+                    <li>
+                        <b>μ:</b> Es la media de la distribución, que indica el centro de la campana.
+                    </li>
+                    <li>
+                        <b>σ:</b> Es la desviación estándar, que determina la dispersión de los datos alrededor de la media.
+                    </li>
+                    <li>
+                        <b>e:</b> Es la base del logaritmo natural (aproximadamente 2.71828).
+                    </li>
+                </ul>
+            </p>
+            <p>
+                Esta fórmula describe la forma de la curva de campana y se utiliza para calcular la probabilidad de que la variable aleatoria caiga en un rango específico. En la práctica, muchos cálculos relacionados con la distribución normal se realizan utilizando tablas de valores z o software estadístico, pero esta fórmula subyace en el fundamento teórico de la distribución normal.
+            </p>
+        </article>
+    </section>
+    <!-- Pie de pagina -->
+    <footer>
+        <ul>
+            <li>
+                <a href="mailto:victor.2002.espinoza@gmail.com">Victor Ibarra</a>
+            </li>
+            <li>&</li>
+            <li>
+                <a href="mailto:ignacioguerratorres@gmail.com">Ignacio Guerra</a>
+            </li>
+        </ul>
+        <p>Copyright 2023</p>
+            <a class = "info" href= "texto.pdf" target="_blank">Buscas más información ?</a>
+    </footer> 
+</body>
+</html>

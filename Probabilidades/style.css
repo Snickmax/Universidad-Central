@@ -1,0 +1,148 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #efefef;
+}
+
+header {
+    background-color: #364552;
+    color: white;
+    padding: 3rem 2rem;
+}
+
+header h1{
+    font-size:  4rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+h1::before{
+    content: "Distribución Normal";
+}
+
+h1:hover::before{
+    content: "Queremos un 7.0 😉";
+}
+
+article h2 {
+    text-decoration: underline;
+    text-align: center;
+}
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+img , input, select{
+    width: 60%;
+    margin: 0 auto;
+}
+img{
+    max-width: 300px;
+}
+
+section article {
+    transition: all 0.3s ease;
+    background-color: white;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+}
+
+section article:hover {
+    box-shadow: 0 0.1rem 0.4rem black;
+}
+
+section article h2, section article p, section article form{
+    margin: 1rem;
+}
+
+
+.paren {
+    display: inline-block;
+    padding: 5px;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    border-radius: 8px;
+    margin-left: 2px;
+}
+
+footer {
+    background-color: #222;
+    padding: 3rem;
+    color: #fff;
+}
+
+footer ul {
+    float: right;    
+}
+
+footer p{
+    margin: 0;
+}
+
+footer ul{
+    text-align: center;
+    margin: 0;
+}
+
+footer ul li{
+    display: inline;
+}
+
+a{
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color:  cornflowerblue;
+}
+article td, article th {
+    width: 33.3%;
+    padding: 10px;
+}
+
+header th {
+    width: 25%;
+    padding: 10px;
+}
+
+.MENU:hover{
+    background-color: #161e25;
+    cursor: pointer;
+    border-radius: 9px;
+}
+
+#valor , #valor2{
+    max-width: 60px;
+    text-align: right;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.media{
+    text-align: left;
+}
+
+.sigma {
+    text-align: right;
+}
+
+.select {
+    text-align: center;
+}
+
+.info {
+    font-size: 12px;
+}
+
+.numentre2 {
+    max-width: 80px;
+}
