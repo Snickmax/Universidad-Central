@@ -1,0 +1,144 @@
+> topic pelis
+
+    + inicio
+    - \nBienvenido al apartado de peliculas, las funciones disponibles son las siguientes:\n
+    ^ - Obtener recomendaciones de peliculas\n
+    ^ - Descubrir peliculas para los generos de accion, comedia, drama, animacion, romance y terror\n
+    ^ - Ver la sinopsis de las peliculas disponibles\n\n
+    ^ - Para cambiar de tema debes volver al inicio escribiendo "volver" o "salir"
+
+    ! var accion = Películas de Acción\n
+    ^ Rápidos y Furiosos 9\n
+    ^ Misión Imposible 7
+
+    ! var comedia = Películas de Comedia\n
+    ^ Jumanji: Siguiente nivel\n
+    ^ Bad Boys for Life
+
+    ! var drama = Películas de Drama\n
+    ^ 1917\n
+    ^ Pearl Harbor
+
+    ! var animacion = Películas de Animación\n
+    ^ Los Minions\n
+    ^ RobotDreams
+
+    ! var romance = Películas de Romance\n
+    ^ Pared con pared\n
+    ^ Amor Perruno
+
+    ! var terror = Películas de Terror\n
+    ^ Siniestro\n
+    ^ Terrifier
+
+    + [*] hola [*]
+    - Hola, cómo te encuentras ?
+
+    + [*] buenos dias{weight=10} [*]
+    - ¡Buenos días! ¿Cómo puedo asistirte hoy?
+
+    + [*] buenas tardes{weight=8} [*]
+    - ¡Buenas tardes! ¿En qué puedo servirte?
+
+    + [*] buenas noches{weight=5} [*]
+    - ¡Buenas noches! ¿Cómo puedo ayudarte?
+
+    + [*] como estas{weight=5} [*]
+    - Estoy bien. ¿Qué necesitas hoy?
+
+    + [*] gracias{weight=5} [*]
+    - ¡De nada! ¿Hay algo más en lo que pueda ayudarte?
+    - ¡De nada! ¿Te gustaría hablar de algo más? \n<bot opciones>
+
+    + [*] adios{weight=5} [*]
+    - ¡Adiós! Espero que tengas un gran día.
+    - ¡Hasta luego! Fue un placer hablar contigo.
+
+    + [*] que tal{weight=5} [*]
+    - Todo bien, gracias por preguntar. ¿En qué puedo asistirte?
+    
+    + [*] (cuentame|de que trata) [*] rapidos y furiosos 9 [*]
+    - Dom Toretto lleva una vida tranquila con Letty y su hijo, el pequeño Brian, pero saben que el peligro siempre acecha en su pacífico horizonte. Esta vez, esa amenaza obligará a Dom a enfrentarse a los pecados de su pasado si quiere salvar a los que más ama.
+
+    + [*] (cuentame|de que trata) [*] mision imposible 7 [*]
+    - La séptima entrega de la serie de Misión Imposible sigue a Ethan Hunt y su equipo enfrentando una de sus misiones más difíciles hasta la fecha, mientras luchan contra enemigos que amenazan con destruir el mundo tal como lo conocemos.
+
+    + [*] (cuentame|de que trata) [*] jumanji [*]
+    - En esta secuela, los amigos regresan al mundo de Jumanji para rescatar a uno de los suyos, pero descubren que nada es lo que esperaban. Los jugadores deben enfrentarse a lugares desconocidos y desconcertantes, desde desiertos áridos hasta montañas nevadas, para escapar del juego más peligroso del mundo.
+
+    + [*] (cuentame|de que trata) [*] bad boys for life [*]
+    - Los detectives Mike Lowrey y Marcus Burnett se unen nuevamente para enfrentar una amenaza aún mayor en la ciudad de Miami mientras lidian con nuevos cambios en sus vidas personales y profesionales.
+
+    + [*] (cuentame|de que trata) [*] 1917 [*]
+    - Durante la Primera Guerra Mundial, dos jóvenes soldados británicos reciben una orden, aparentemente, imposible de ejecutar: en una carrera contra el reloj, deben infiltrarse en territorio enemigo para entregar un mensaje que podría salvar a miles de compañeros.
+
+    + [*] (cuentame|de que trata) [*] pearl harbor [*]
+    - Rafe y Danny, dos pilotos que sobrevivieron al bombardeo de Pearl Harbor, amigos desde la infancia y luego rivales por el amor de una mujer, deben superar sus diferencias y unirse cuando el gobierno los envía a una misión secreta.
+
+    + [*] (cuentame|de que trata) [*] los minions [*]
+    - Los minions, ingenuos y torpes, buscan un verdadero villano al que servir. A lo largo de una evolución de millones de años, los minions se han puesto al servicio de los amos más despreciables. Kevin, acompañado por el rebelde Stuart y el adorable Bob, emprende un emocionante viaje para conseguir una jefa a quien servir, la terrible Scarlet Overkill.
+
+    + [*] (cuentame|de que trata) [*] robotdreams [*]
+    - Dog, un perro de Nueva York, hace un nuevo amigo: Robot, un robot. Sin embargo, cuando un viaje a la playa deja a su amigo oxidado y varado en la arena, Dog lno tiene otro remedio que regresar solo a su antigua vida.
+
+    + [*] (cuentame|de que trata) [*] amor perruno [*]
+    - Después de una desastrosa primera cita, Nicole, una joven desenfrenada, y Max, socialmente ansioso, juran borrar el número de teléfono del otro hasta que se enteran de que sus perros han encontrado el amor. ¡Y ahora hay cachorros en camino!
+
+    + [*] (cuentame|de que trata) [*] pared con pared [*]
+    - Una joven pianista se prepara para una audición tocando el piano a diario. Al otro lado de la pared de su piso vive un vecino que necesita silencio absoluto para desarrollar su trabajo como inventor de juegos.
+
+    + [*] (cuentame|de que trata) [*] siniestro [*]
+    - Ellison Oswald, escritor de historias criminales, está en una mala racha; no ha tenido un éxito en más de 10 años y está desesperado. Cuando descubre una película que muestra las muertes de una familia, él promete resolver el misterio. Ellison y su familia se mudan a la casa de las víctimas y se pone a trabajar. Sin embargo, cuando unas imágenes antiguas y otras pistas apuntan a una presencia sobrenatural. Ellison descubre que vivir en esa casa podría costarles la vida.
+
+    + [*] (cuentame|de que trata) [*] terrifier [*]
+    - En la noche de Halloween, tras una fiesta, Tara y Dawn entran en una pizzería. Tras ellas llega un payaso inquietante y grotesco que hiela la sangre a Tara. Las chicas no tardan en descubrir que es un psicópata sádico que pretende matarlas.
+
+    + [*] accion{weight=2}
+    - <bot accion>
+
+    + [*] comedia{weight=2}
+    - <bot comedia>
+
+    + [*] drama{weight=2}
+    - <bot drama>
+
+    + [*] animacion{weight=2}
+    - <bot animacion>
+
+    + [*] romance{weight=2}
+    - <bot romance>
+
+    + [*] (terror|miedo){weight=2}
+    - <bot terror>
+
+    + [*] (recomiendame|recomiendas|recomienda) [*]
+    - Te recomiendo Rápidos y Furiosos 9 porque ofrece una acción trepidante y emocionantes secuencias de carreras que mantendrán tu adrenalina alta.
+    - Te recomiendo Misión Imposible 7 por su intrincada trama de espionaje y las impresionantes acrobacias de Tom Cruise, que hacen de esta película una experiencia emocionante.
+    - Te recomiendo Jumanji: Siguiente nivel porque combina aventura y comedia de manera brillante, ofreciendo momentos divertidos y emocionantes en un mundo lleno de sorpresas.
+    - Te recomiendo Bad Boys for Life por su acción explosiva y el carismático dúo protagonista de Will Smith y Martin Lawrence, que garantizan una película llena de humor y acción.
+    - Te recomiendo 1917 por su impresionante dirección y su inmersiva experiencia visual, que te sumerge en la intensidad de la Primera Guerra Mundial de una manera única.
+    - Te recomiendo Pearl Harbor por su emotiva historia de amor y tragedia entrelazada con el ataque a Pearl Harbor, que ofrece una mirada conmovedora a un evento histórico.
+    - Te recomiendo Los Minions por su humor encantador y las divertidas travesuras de estos adorables personajes amarillos, perfecto para disfrutar en familia.
+    - Te recomiendo RobotDreams por su fascinante exploración de la inteligencia artificial y las complejidades éticas que plantea, ofreciendo una reflexión profunda sobre el futuro tecnológico.
+    - Te recomiendo Pared con Pared por su intrigante premisa de suspenso psicológico y las tensiones crecientes entre sus personajes, que te mantendrán en vilo hasta el final.
+    - Te recomiendo Amor Perruno por su tierna historia sobre la lealtad y el vínculo especial entre humanos y sus mascotas, que toca el corazón de los amantes de los animales.
+    - Te recomiendo Siniestro por su atmósfera inquietante y las escalofriantes escenas que te mantendrán al borde del asiento, perfecta para los aficionados al terror.
+    - Te recomiendo Terrifier por su impactante y escalofriante retrato de un villano despiadado, que ofrece una experiencia de horror visceral que no olvidarás fácilmente.
+
+    + no me des las peliculas de [*]{weight=5}
+    - Claro, ¿de qué género te gustaría saber más?
+
+    + no quiero saber las peliculas de [*]{weight=5}
+    - Claro, ¿de qué género te gustaría saber más?
+
+    + [*] (peliculas|estrenos) de [*]{weight=5}
+    - Entiendo que estás interesado en películas de ese género. ¿Te gustaría explorar más sobre alguna en particular?
+
+    + *
+    - Recuerda que soy un robot, me podrias preguntar de otra forma
+    - Intenta hacer tu pregunta de otra manera.
+
+    + (volver|salir|exit){weight=1}
+    - Volviendo al inicio. . .\n
+    ^ <set topic=default> {@ hola}
+< topic
